@@ -7,19 +7,26 @@
     <title>Temperature Converter</title>
 </head>
 <body>
-    <div class="converter-container">
-        <label for="temperature">Enter The Temperature </label>
-        <input type="text" id="temperature" placeholder="Enter temperature" />
+    <div class="container">
+        <div class="header">
+            <h1>Temperature Converter</h1>
+            <p>Quickly convert between Celsius and Fahrenheit</p>
+        </div>
 
-        <label for="unit">Select Unit:</label>
-        <select id="unit">
-            <option value="celsius">Celsius</option>
-            <option value="fahrenheit">Fahrenheit</option>
-        </select>
+        <div class="converter-container">
+            <label for="temperature">Enter Temperature:</label>
+            <input type="text" id="temperature" placeholder="Enter temperature" />
 
-        <button onclick="convertTemperature()">Convert</button>
+            <label for="unit">Select Unit:</label>
+            <select id="unit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
 
-        <div id="result"></div>
+            <button onclick="convertTemperature()">Convert</button>
+
+            <div id="result"></div>
+        </div>
     </div>
 
     <script src="script.js"></script>
